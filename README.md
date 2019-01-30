@@ -32,7 +32,7 @@ module.exports = karmaConfig;
 ## Install alongside bb-test
 
 ```bash
-npm install -g bb-test-plugin-custom-config
+npm install -g @bb-cli/bb-test-plugin-custom-config
 ```
 
 ## Usage
