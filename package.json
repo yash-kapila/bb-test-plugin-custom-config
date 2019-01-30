@@ -1,0 +1,15 @@
+{
+  "name": "bb-test-plugin-custom-config",
+  "version": "0.1.0",
+  "description": "Provide a custom karma configuration file to bb-test",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "bb-cli",
+    "bb-test",
+    "bb-cli-test-plugin"
+  ],
+  "author": "Yash Kapila",
+  "license": "ISC",
+  "dependencies": {}
+}
