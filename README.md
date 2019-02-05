@@ -7,25 +7,19 @@ Provides support for having a custom karma configuration file which is merged wi
 ```
 const karmaConfig = {
   browserDisconnectTimeout: 3000,
-
-  browsers: [
-    'ChromeHeadless',
-  ],
-
+  
+  browsers: ['ChromeHeadlessNoSandbox'],
+  
   customLaunchers: {
-    ChromeHeadless: {
-      base: 'Chrome',
-      flags: [
-        '--headless',
-        '--disable-gpu',
-        '--no-sandbox',
-        '--remote-debugging-port=9222',
-      ],
+    ChromeHeadlessNoSandbox: {
+      base: 'ChromeHeadless',
+      flags: ['--no-sandbox'],
     },
   },
 };
 
 module.exports = karmaConfig;
+
 
 ```
 
