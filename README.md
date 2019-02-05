@@ -23,14 +23,22 @@ module.exports = karmaConfig;
 
 ```
 
-## Install alongside bb-test
-
-```bash
-npm install -g @bb-cli/bb-test-plugin-custom-config
-```
-
 ## Usage
 
+Clone the repo, navigate inside the directory and execute following:
+
 ```bash
-bb-test unit --test-plugins custom-config
+npm link
 ```
+
+This creates a symlink in the global `node_modules` folder that links to this package.
+
+Next, navigate inside your project's statics directory and execute the following:
+
+```
+npm link @bb-cli/bb-test-plugin-custom-config
+```
+
+This will create a symbolic link from the previously globally linked package to statics `node_modules`.
+
+#### Note that package-name is taken from package.json, not from directory name.
